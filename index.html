@@ -26,6 +26,13 @@
       <p>悩みを聞いてあげて、ぴったりな映画をお勧めしてあげましょう</p>
       <p>まずは今日の名作ラインナップ3本の紹介です</p>
     </div>
+    <div class="slidebox">
+      <ul class="slide-pic-list">
+        <li class="slide-image"><img class="info-pic" src="./img/pulpfiction.png" alt="" height="250px" width="350px"></li>
+        <li class="slide-image"><img class="info-pic" src="./img/bttf.jpeg" alt="" height="250px" width="350px"></li>
+        <li class="slide-image"><img class="info-pic" src="./img/shining.png" alt="" height="250px" width="350px"></li>
+      </ul>
+    </div>
   </div>
 
   <div id="line-up_container">
@@ -116,7 +123,7 @@ function msg_create(){
   nayami=Math.floor(Math.random()*3); 
   var a=["ああ上司がムカつく！理不尽な指示ばっかりして、うまくいかないとすぐ怒る！…本当は私の主張もあるけど、どうせ意見を言ったところで、結局何も変わらないんだろうな…",
   "今の仕事をやめて、起業したいと思っているの。でも今の安定を手放して大丈夫かな…失敗して借金を背負ってしまったら、もうこの先おしまいだよね…。最悪の結果ばかり考えてしまって、どうしようかな…。",
-  "この先ずっと同じように毎日仕事して、一度きりの人生を消費していくのかと思うと、なんだか寂しくなる…。友達も家庭を持って遊んでくれなくなったし、休日も楽しみじゃなくなっちゃった。"];
+  "この先ずっと同じように毎日仕事して、一度きりの人生を消費していくのかと思うと、なんだか寂しくなる…。友人も段々と家庭を持って遊んでくれなくなったし、休日も楽しみじゃなくなっちゃった。"];
 document.getElementById("arrow_box").innerHTML = a[nayami];
 document.getElementById("statement1").innerHTML = "どの映画がおすすめ？";
 $('.moviebutton').prop('disabled', false);
@@ -127,25 +134,25 @@ if (nayami == 0 && movieselect == 0) {
   Result = "うーん、この主人公は人に愛されるし仕事はできるし…なんだか私とは違うなあ";
   flag = 2;
 } else if(nayami == 0 && movieselect == 1) {
-  Result = "良い映画をありがとう！主人公に共感した！とにかく行動してみることが大事！！";
+  Result = "良い映画をありがとう！悩んでばっかりいないで、勇気出して主張してみることが大事だね！";
   flag = 0;
 } else if(nayami == 0 && movieselect == 2) {
-  Result = "仕事以外に意識を向けるのは良いかもしれないけど、少し悩みからはズレてるかな…";
+  Result = "仕事以外に意識を向けるのは良いかもしれないけど、少し私の悩みからはズレてるかな…";
   flag = 1;
 } else if(nayami == 1 && movieselect == 0) {
-  Result = "良い映画をありがとう！もし仕事が失敗しても、生きていれば幸せはやってくるはず！";
+  Result = "良い映画をありがとう！もし仕事が失敗しても、踏ん張って生きていれば幸せはやってくるはず！";
   flag = 0;
 } else if(nayami == 1 && movieselect == 1) {
-  Result = "確かに行動に起こすは大事だけど、人生はヒーロー物語みたいにうまくいかないよね";
+  Result = "確かに行動に起こすことは大事だけど、人生はヒーロー物語みたいにうまくいかないよね";
   flag = 1;
 } else if(nayami == 1 && movieselect == 2) {
   Result = "大きな決断をすることに対するメッセージは、この映画からあまり感じなかったかな…";
   flag = 2;
 } else if(nayami == 2 && movieselect == 0) {
-  Result = "山あり谷ありも大変だと思うけど、平凡ほど退屈なことはないのよね…";
+  Result = "生きているだけで幸せだと思えたけど、しかし退屈なことに変わりはないなあ…";
   flag = 1;
 } else if(nayami == 2 && movieselect == 1) {
-  Result = "やっぱり刺激的なことなんて、こういうスーパーヒーローの世界だけなのかしら…";
+  Result = "スーパーヒーローになるよりもう少し現実的な方法で刺激を受けたいかな";
   flag = 2;
 } else {
   Result = "良い映画をありがとう！仕事以外で刺激になる活動、なにか始めてみようかな！";

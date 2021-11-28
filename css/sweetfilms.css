@@ -7,13 +7,81 @@ body{
 }
 .logo{
     text-align: center;
+    margin-bottom: 0px;
+}
+#rule_container{
+  position: relative;
 }
 .infoscript{
-    text-align: center;
+    text-align: left;
     font-size: 18px;
+    padding-top: 20px;
+    margin-left: 20%;
 }
+.slidebox{
+  display: flex;
+  position: absolute; top: 40%; left: 60%;
+}
+.slide-pic-list{
+  padding: 0;
+  /* display: table-cell; */
+  font-size: 0;
+}
+.slide-image{
+    opacity: 0;
+    width:  0%;
+    height: 0%;
+    object-fit: cover;
+    -webkit-animation: anime 10s 0s infinite;
+    animation: anime 9s 0s infinite;
+  }
+  .slide-image:nth-of-type(2) {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 3s;
+  }
+  .slide-image:nth-of-type(3) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 6s;
+  }
+  @keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      z-index: 9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      z-index: 9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
 #line-up_container{
-    margin-top: 40px;
+    margin-top: 80px;
 }
 #movie1_container{
     background-color:lightgray;
@@ -94,6 +162,7 @@ body{
 }
 .newgame_button{
     margin: 0 auto;
+    margin-bottom: 40px;
     width: 1000px;
     height: 150px;
     background-color:seashell;
